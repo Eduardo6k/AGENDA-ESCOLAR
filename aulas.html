@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Aulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6ede9;
+            color: #362819;
+        }
+
+        header {
+            background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .day {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+            background: #3f0455;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #cbb4d4, #9003c);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #cbb4d4, #9003c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border-radius: 22px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .day h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .lesson {
+            border-bottom: 1px solid #191815;
+            padding: 10px 0;
+        }
+
+        .lesson:last-child {
+            border-bottom: none;
+        }
+        .lesson p{
+            color:black;
+            
+        }
+
+        @media (max-width: 768px) {
+            .day {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minhas Aulas</h1>
+    </header>
+    <div class="container">
+        <div class="day">
+            <h2>Segunda-feira</h2>
+            <div class="lesson">
+                <p>18:00 - ESTRUTURA DE DADOS</p>
+                <p>20:00 - LABORATÓRIO DE ESTRUTURA DE DADOS</p>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Terça-feira</h2>
+            <div class="lesson">
+                <p>18:00 - PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO</p>
+                <p>20:00 - ESTRUTURA DE DADOS</p>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Quarta-feira</h2>
+            <div class="lesson">
+                <p>18:00 - ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES</p>
+                <p>20:00 - ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES</p>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Quinta-feira</h2>
+            <div class="lesson">
+                <p>18:00 - SISTEMAS DE INFORMAÇÃO</p>
+                <p>13:30 - Aula VAGA</p>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Sexta-feira</h2>
+            <div class="lesson">
+                <p>18:00 - Aula VAGA</p>
+                <p>20:00 - SISTEMAS DE INFORMAÇÃO</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
